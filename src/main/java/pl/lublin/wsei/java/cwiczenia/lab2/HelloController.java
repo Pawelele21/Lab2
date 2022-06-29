@@ -69,15 +69,23 @@ public class HelloController {
 
         float pole_calkowite = (float) (2 * 3.14 * r * r + 2 * 3.14 * r * h);
 
+//-----------------------------------------------------------------------------------------------------------
+
         float waga_blachy = roundResult(7.85F * pole_calkowite * g);
         float waga_blachy_nierdz = roundResult(8F * pole_calkowite * g);
+
+//-----------------------------------------------------------------------------------------------------------
 
         float cena_blachy = roundResult(2.5F * waga_blachy);
         float cena_blachy_nierdz = roundResult(3F * waga_blachy_nierdz);
 
+//-----------------------------------------------------------------------------------------------------------
 
         StalWaga.setText(waga_blachy + " kg");
         StalKoszt.setText(cena_blachy + " zł");
+
+//-----------------------------------------------------------------------------------------------------------
+
 
         NierdzWaga.setText(waga_blachy_nierdz + " kg");
         NierdzKoszt.setText(cena_blachy_nierdz + " zł");
